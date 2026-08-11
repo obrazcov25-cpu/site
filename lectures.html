@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Практические лекции о движении и тренировках</title>
+<meta name="description" content="Практические лекции в Праге о движении, тренировочном процессе, работе с телом, двигательных паттернах и подборе упражнений.">
+<link rel="canonical" href="https://obrazcov25-cpu.github.io/site/lectures.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Павел Образцов">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Практические лекции о движении и тренировках">
+<meta property="og:description" content="Практические лекции в Праге о движении, тренировочном процессе, работе с телом, двигательных паттернах и подборе упражнений.">
+<meta property="og:url" content="https://obrazcov25-cpu.github.io/site/lectures.html">
+<meta property="og:image" content="https://obrazcov25-cpu.github.io/site/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Практические лекции о движении и тренировках">
+<meta name="twitter:description" content="Практические лекции в Праге о движении, тренировочном процессе, работе с телом, двигательных паттернах и подборе упражнений.">
+<meta name="twitter:image" content="https://obrazcov25-cpu.github.io/site/og.jpg">
+<meta name="theme-color" content="#0B0C0E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0B0C0E;--panel:#131417;--ink:#F3F0EA;--mut:#9C9CA1;--acc:#C79A55;
+--g1:#D8AE68;--g2:#B4873F;--line:rgba(243,240,234,.10);--warn:#E3A489}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.65 Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+img{display:block;max-width:100%}
+a{color:inherit}
+[id]{scroll-margin-top:74px}
+::selection{background:var(--acc);color:#0B0C0E}
+h1,h2,h3,.btn,.eyebrow,.brand,.meta,.tile b,.fact,.price,.contacts b{font-family:Oswald,'Arial Narrow',sans-serif;text-transform:uppercase}
+h1{font-weight:500;font-size:clamp(31px,7.4vw,58px);line-height:1.06}
+h2{font-weight:500;font-size:clamp(25px,4.4vw,40px);line-height:1.13}
+h3{font-weight:500;font-size:clamp(19px,2.5vw,23px);line-height:1.22}
+p{max-width:66ch}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 20px}
+.sec{padding:clamp(52px,9vw,100px) 0;border-top:1px solid var(--line)}
+.sec.first{border-top:0}
+.eyebrow{font-weight:500;font-size:13px;letter-spacing:.2em;color:var(--acc);display:flex;align-items:center;gap:11px;margin-bottom:18px}
+.eyebrow::before{content:"";width:24px;height:1px;background:var(--acc);flex:none}
+.lead{font-size:clamp(17px,2.1vw,20px);line-height:1.55;color:var(--mut);max-width:60ch}
+.mut{color:var(--mut)}
+.stack>*+*{margin-top:15px}
+.mt{margin-top:28px}
+.mt-s{margin-top:18px}
+.head-block{margin-bottom:30px}
+.head-block h2+.lead{margin-top:14px}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;text-align:center;min-height:52px;padding:14px 28px;border:1px solid transparent;border-radius:4px;background:linear-gradient(135deg,var(--g1),var(--g2));color:#0B0C0E;font-size:15px;font-weight:500;letter-spacing:.09em;text-decoration:none;cursor:pointer;transition:filter .2s,transform .12s,border-color .2s,color .2s}
+.btn:hover{filter:brightness(1.09)}
+.btn:active{transform:translateY(1px)}
+.btn:disabled{opacity:.5;cursor:default;filter:none}
+.btn--ghost{background:none;color:var(--ink);border-color:var(--line)}
+.btn--ghost:hover{filter:none;border-color:var(--acc);color:var(--acc)}
+.btn--wide{width:100%}
+@media (min-width:620px){.btn--wide{width:auto;min-width:290px}}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+/* header */
+.top{position:sticky;top:0;z-index:40;background:rgba(11,12,14,.88);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:58px}
+.brand{font-size:14px;font-weight:500;letter-spacing:.14em;text-decoration:none}
+.nav{display:none;gap:28px}
+@media (min-width:860px){.nav{display:flex}}
+.nav a,.back{font-size:14px;color:var(--mut);text-decoration:none}
+.nav a:hover,.back:hover{color:var(--acc)}
+/* hero */
+.hero{position:relative;border-bottom:1px solid var(--line)}
+.hero-media{position:relative}
+.hero-media img{width:100%;aspect-ratio:5/4;object-fit:cover;object-position:74% 48%}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,12,14,.45) 0,rgba(11,12,14,0) 30%,rgba(11,12,14,.86) 84%,#0B0C0E 100%)}
+.hero-inner .wrap{width:100%}
+.hero-body{position:relative;padding:22px 0 clamp(38px,7vw,60px);max-width:660px}
+.hero-body .lead{margin-top:18px}
+.hero-body .btn{margin-top:30px}
+@media (min-width:900px){
+ .hero--img{display:grid;min-height:min(740px,84vh)}
+ .hero-media,.hero-inner{grid-area:1/1}
+ .hero-media img{height:100%;aspect-ratio:auto;object-position:62% 46%}
+ .hero-media::after{background:linear-gradient(90deg,#0B0C0E 3%,rgba(11,12,14,.9) 42%,rgba(11,12,14,.08) 80%)}
+ .hero-inner{display:flex;align-items:center}
+ .hero-body{padding:70px 0}
+}
+.hero--split{padding:clamp(34px,6vw,76px) 0}
+.hero--split .hero-body{padding:0;max-width:none}
+.hero--split .shot{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 42%;border-radius:8px;margin-top:30px}
+@media (min-width:900px){
+ .hero--split .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,46%);gap:56px;align-items:center}
+ .hero--split .shot{margin-top:0;aspect-ratio:5/6}
+}
+.hero--text{border-bottom:1px solid var(--line);padding:clamp(44px,9vw,96px) 0}
+.hero--text .hero-body{padding:0}
+.upline{font-family:Oswald,sans-serif;text-transform:uppercase;letter-spacing:.24em;font-size:13px;font-weight:500;color:var(--acc);margin-bottom:16px}
+/* facts */
+.facts{display:grid;border-top:1px solid var(--line)}
+.fact{padding:19px 0;border-bottom:1px solid var(--line);font-weight:400;font-size:clamp(16px,2.2vw,19px);letter-spacing:.03em;line-height:1.25;display:flex;gap:14px;align-items:baseline}
+.fact::before{content:"";width:7px;height:7px;flex:none;background:var(--acc);transform:translateY(-3px)}
+@media (min-width:780px){
+ .facts{grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--line)}
+ .fact{border-bottom:0;border-left:1px solid var(--line);padding:24px 22px 24px 22px}
+ .fact:first-child{border-left:0;padding-left:0}
+}
+/* grids + cards */
+.grid{display:grid;gap:16px}
+@media (min-width:760px){.g2,.g3,.g4{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:980px){.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}}
+.card{background:var(--panel);border-radius:6px;padding:28px 24px;display:flex;flex-direction:column;gap:14px;border:1px solid transparent;position:relative;overflow:hidden;transition:border-color .2s}
+.card p{color:var(--mut);flex:1;font-size:16px}
+.card .btn{margin-top:6px;width:100%}
+.card--a::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--g1),var(--g2))}
+.card--b{background:transparent;border-color:rgba(199,154,85,.5)}
+.card--c{border-left:3px solid var(--acc);border-radius:0 6px 6px 0}
+.card:hover{border-color:rgba(199,154,85,.7)}
+.card--a:hover{border-color:transparent}
+.tile{background:var(--panel);border-radius:6px;padding:22px 20px}
+.tile b{display:block;font-weight:500;font-size:18px;letter-spacing:.03em;line-height:1.2;margin-bottom:7px}
+.tile span{color:var(--mut);font-size:16px;line-height:1.45;display:block}
+.panel{background:var(--panel);border-radius:8px;padding:clamp(22px,4vw,36px)}
+.panel--acc{background:transparent;border:1px solid rgba(199,154,85,.5)}
+.panel--flat{background:transparent;border:1px solid var(--line)}
+/* split */
+@media (min-width:920px){
+ .split{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:52px;align-items:start}
+ .split img{position:sticky;top:90px}
+}
+.split img{width:100%;border-radius:8px;margin-bottom:26px}
+@media (min-width:920px){.split img{margin-bottom:0}}
+/* meta row */
+.meta{display:flex;flex-wrap:wrap;gap:6px 0;font-size:14px;letter-spacing:.12em;color:var(--mut);margin-bottom:18px;font-weight:400}
+.meta i{font-style:normal}
+.meta i+i::before{content:"·";color:var(--acc);margin:0 11px}
+.price{font-weight:500;font-size:clamp(42px,9vw,68px);line-height:1;color:var(--acc)}
+.list{list-style:none;display:grid;gap:12px;margin-top:6px}
+.list li{position:relative;padding-left:22px;color:var(--mut);font-size:16px;line-height:1.5}
+.list li::before{content:"";position:absolute;left:0;top:9px;width:8px;height:1px;background:var(--acc)}
+.note{font-size:14px;line-height:1.5;color:var(--mut);max-width:72ch}
+hr.rule{border:0;border-top:1px solid var(--line);margin:clamp(38px,6vw,60px) 0}
+/* forms */
+.form{max-width:580px}
+.field{margin-bottom:20px}
+.field label{display:block;font-size:15px;color:var(--mut);margin-bottom:8px}
+.field input,.field select,.field textarea{width:100%;min-height:52px;background:#0B0C0E;border:1px solid var(--line);border-radius:4px;color:var(--ink);font:400 16px/1.5 Manrope,sans-serif;padding:14px}
+.field textarea{min-height:112px;resize:vertical}
+.field select{appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--acc) 50%),linear-gradient(135deg,var(--acc) 50%,transparent 50%);background-position:calc(100% - 21px) 24px,calc(100% - 15px) 24px;background-size:6px 6px,6px 6px;background-repeat:no-repeat;padding-right:44px}
+.field input::placeholder,.field textarea::placeholder{color:#5E5F65}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--acc);box-shadow:0 0 0 3px rgba(199,154,85,.16)}
+.field.invalid input,.field.invalid select{border-color:var(--warn)}
+.hint{font-size:14px;color:var(--mut);margin-top:7px}
+.err{display:none;color:var(--warn);font-size:14px;margin-top:7px}
+.err.on{display:block}
+.checkwrap{margin-bottom:16px}
+.check{display:flex;gap:13px;align-items:flex-start;font-size:15px;line-height:1.5;color:var(--mut);cursor:pointer}
+.check input{width:22px;height:22px;min-height:0;flex:none;margin-top:1px;accent-color:var(--acc);padding:0}
+.check a{color:var(--acc)}
+.form .btn{margin-top:10px}
+.form.off{display:none}
+.done{display:none;background:var(--panel);border-radius:8px;padding:clamp(24px,4vw,36px);max-width:580px}
+.done.on{display:block}
+.done p{margin:14px 0 24px;color:var(--mut)}
+/* sticky cta */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(11,12,14,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--line);transform:translateY(130%);transition:transform .3s ease}
+.sticky.show{transform:none}
+.sticky .btn{width:100%}
+@media (min-width:900px){.sticky{display:none}}
+body.hasSticky{padding-bottom:86px}
+@media (min-width:900px){body.hasSticky{padding-bottom:0}}
+/* footer */
+.foot{border-top:1px solid var(--line);padding:clamp(48px,8vw,86px) 0 30px}
+.contacts{display:grid;gap:12px;margin:24px 0 28px;max-width:620px}
+.contacts a{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:56px;padding:14px 18px;background:var(--panel);border:1px solid transparent;border-radius:6px;text-decoration:none;transition:border-color .2s}
+.contacts a:hover{border-color:var(--acc)}
+.contacts b{font-size:14px;font-weight:500;letter-spacing:.13em}
+.contacts span{color:var(--acc);font-size:15px}
+@media (min-width:700px){.contacts{grid-template-columns:1fr 1fr}}
+.legal{margin-top:38px;padding-top:22px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between;font-size:14px;color:var(--mut)}
+.legal a:hover{color:var(--acc)}
+/* privacy */
+.doc{max-width:760px}
+.doc h2{font-size:clamp(21px,3vw,26px);margin:38px 0 14px}
+.doc h2:first-child{margin-top:0}
+.doc p,.doc li{color:var(--mut);font-size:16px;line-height:1.65}
+.doc p+p{margin-top:12px}
+.doc ul{list-style:none;display:grid;gap:10px;margin-top:12px}
+.doc li{position:relative;padding-left:22px}
+.doc li::before{content:"";position:absolute;left:0;top:11px;width:8px;height:1px;background:var(--acc)}
+.doc a{color:var(--acc)}
+
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="index.html">Павел Образцов</a>
+<a class="back" href="index.html">← На главную</a>
+</div></header>
+<main>
+<section class="hero hero--text"><div class="wrap"><div class="hero-body">
+ <p class="upline">Лекции</p>
+ <h1>Хочешь попасть на следующую лекцию?</h1>
+ <p class="lead">Дата следующей встречи появится позже.<br>Запишись в лист ожидания, чтобы получить информацию первым.</p>
+ <a class="btn btn--wide" href="#form" style="margin-top:30px">Сообщить о следующей лекции</a>
+</div></div></section>
+
+<!-- АНОНСЫ: новые лекции добавляй сюда, перед листом ожидания.
+<section class="sec first"><div class="wrap">
+ <div class="head-block"><p class="eyebrow">Ближайшая лекция</p><h2>Название лекции</h2></div>
+ <p class="meta"><i>Дата</i><i>Время</i><i>Место</i><i>Цена</i></p>
+ <div class="panel stack"><p>Описание.</p></div>
+</div></section>
+-->
+
+<section class="sec first" id="form"><div class="wrap">
+ <div class="head-block"><p class="eyebrow">Регистрация</p><h2>Лист ожидания</h2>
+ <p class="lead">Запись сейчас ни к чему не обязывает.<br>Ты просто получишь информацию о следующей лекции после открытия регистрации.</p></div>
+ <form class="form" id="lead" action="https://formspree.io/f/xgogrqgo" method="post" novalidate>
+<input type="hidden" name="direction" value="lecture">
+<input type="hidden" name="_subject" value="Заявка: лекции">
+<div class="field"><label for="n">Имя</label><input type="text" id="n" name="Имя" data-check data-min="2" autocomplete="name"><p class="err">Укажи имя.</p></div><div class="field"><label for="c">Instagram или Telegram</label><input type="text" id="c" name="Контакт" data-check data-min="2" placeholder="@username"><p class="err">Укажи контакт, чтобы я мог с тобой связаться.</p></div><div class="field"><label for="exp">Опыт работы тренером</label><select id="exp" name="Опыт работы тренером"><option value="">Не выбрано</option><option>Ещё не работаю тренером</option><option>До 1 года</option><option>1–3 года</option><option>3–5 лет</option><option>Более 5 лет</option></select></div><div class="field"><label for="tp">Какую тему хочешь разобрать на следующей лекции?</label><textarea id="tp" name="Тема для лекции" maxlength="500" placeholder="Необязательно"></textarea></div>
+<div class="checkwrap"><label class="check"><input type="checkbox" name="consent" data-check><span>Я согласен на <a href="privacy.html">обработку данных</a> и ознакомился с политикой обработки персональных данных.</span></label><p class="err">Необходимо согласие на обработку данных.</p></div>
+<div class="checkwrap"><label class="check"><input type="checkbox" name="news"><span>Хочу получать информацию о новых тренировках, лекциях и программах.</span></label></div>
+<p class="err" id="sendfail">Не получилось отправить. Напиши мне в Telegram или Instagram — ссылки ниже.</p>
+<button type="submit" class="btn btn--wide submit">Сообщить о следующей лекции</button>
+</form>
+<div class="done" id="done">
+<h3>Готово</h3>
+<p>Контакт записан. Сообщу дату следующей лекции лично.</p>
+<a class="btn" href="https://t.me/P_obrazcov" target="_blank" rel="noopener">Написать мне</a>
+</div>
+</div></section>
+
+<section class="sec"><div class="wrap">
+ <div class="head-block"><p class="eyebrow">Прошедшие лекции</p></div>
+
+ <article class="panel">
+  <h2>«Что одно упражнение расскажет о клиенте?»</h2>
+  <div class="stack mt-s">
+   <p>В Cleo Gym в Праге прошла практическая лекция «Что одно упражнение расскажет о клиенте?».</p>
+   <p>За 45 минут теории и 45 минут практики мы разобрали типовые ошибки в движении, мобильность, стабильность и моторный контроль.</p>
+   <p>Учились проводить первичный скрининг двигательного паттерна, формулировать рабочую гипотезу и выбирать первый приоритет в тренировке.</p>
+   <p>Главная задача была не поставить человеку диагноз, а научиться точнее наблюдать движение и использовать эту информацию при подборе упражнений.</p>
+  </div>
+  <h3 class="mt">Что разбирали</h3>
+  <ul class="list">
+   <li>Типовые ошибки в базовых движениях</li>
+   <li>Мобильность и стабильность</li>
+   <li>Моторный контроль</li>
+   <li>Первичный скрининг движения</li>
+   <li>Переход от наблюдения к рабочей гипотезе</li>
+   <li>Подбор упражнений под конкретного человека</li>
+  </ul>
+  <hr class="rule" style="margin:26px 0 18px">
+  <p class="note">Скрининг движения не является медицинской диагностикой. Его задача в контексте тренировки состоит в том, чтобы лучше понять особенности движения и точнее подобрать упражнения.</p>
+ </article>
+
+ <!-- Следующая прошедшая лекция — копия <article class="panel"> выше, добавляй сразу под этим комментарием. -->
+
+</div></section>
+</main>
+<div class="sticky"><a class="btn" href="#form">Сообщить о следующей лекции</a></div>
+<footer class="foot" id="contacts"><div class="wrap">
+<p class="eyebrow">Контакты</p>
+<h2>Начать с вопроса тоже нормально</h2>
+<p class="lead" style="margin-top:14px">Если не знаешь, какой формат тебе подходит, напиши мне.</p>
+<div class="contacts">
+<a href="https://t.me/P_obrazcov" target="_blank" rel="noopener"><b>Telegram</b><span>@P_obrazcov</span></a>
+<a href="https://www.instagram.com/obrazcov/" target="_blank" rel="noopener"><b>Instagram</b><span>@obrazcov</span></a>
+</div>
+<a class="btn btn--wide" href="https://t.me/P_obrazcov" target="_blank" rel="noopener">Написать мне</a>
+<div class="legal">
+<span>© 2026 Павел Образцов · Praha</span>
+<a href="privacy.html">Политика обработки данных</a>
+</div>
+</div></footer>
+<script>
+(function(){
+ var s=document.querySelector('.sticky');
+ if(s&&'IntersectionObserver'in window){
+  document.body.classList.add('hasSticky');
+  var top=document.querySelector('.hero'),zone=document.getElementById('form');
+  var past=false,seen=false;
+  function upd(){s.classList.toggle('show',past&&!seen);}
+  if(top)new IntersectionObserver(function(e){past=!e[0].isIntersecting;upd();}).observe(top);
+  if(zone)new IntersectionObserver(function(e){seen=e[0].isIntersecting;upd();},{rootMargin:'0px 0px -20% 0px'}).observe(zone);
+ }
+})();
+function delete_keys(d){delete d.consent;delete d.news;}
+(function(){
+ var f=document.getElementById('lead');if(!f)return;
+ var btn=f.querySelector('.submit'),base=btn.textContent;
+ var req=[].slice.call(f.querySelectorAll('[data-check]'));
+ function box(el){return el.closest('.field')||el.closest('.checkwrap');}
+ function bad(el){
+  if(el.type==='checkbox')return !el.checked;
+  var v=el.value.trim();
+  if(!v)return true;
+  var m=parseInt(el.getAttribute('data-min')||'0',10);
+  return v.length<m;
+ }
+ function paint(el,on){var b=box(el);if(!b)return;b.classList.toggle('invalid',on);var e=b.querySelector('.err');if(e)e.classList.toggle('on',on);}
+ req.forEach(function(el){['input','change'].forEach(function(t){el.addEventListener(t,function(){if(!bad(el))paint(el,false);});});});
+ f.addEventListener('submit',function(ev){
+  ev.preventDefault();
+  var first=null;
+  req.forEach(function(el){var b=bad(el);paint(el,b);if(b&&!first)first=el;});
+  if(first){first.focus();first.scrollIntoView({block:'center'});return;}
+  document.getElementById('sendfail').classList.remove('on');
+  btn.disabled=true;btn.textContent='ОТПРАВЛЯЕМ…';
+  var d={};
+  new FormData(f).forEach(function(v,k){d[k]=d[k]?d[k]+', '+v:v;});
+  delete_keys(d);
+  d['Согласие на обработку данных']=f.consent.checked?'да':'нет';
+  d['Согласие на рассылку']=f.news.checked?'да':'нет';
+  fetch(f.action,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(d)})
+  .then(function(r){if(!r.ok)throw 0;
+   btn.textContent='ЗАЯВКА ОТПРАВЛЕНА';
+   f.classList.add('off');
+   var done=document.getElementById('done');
+   done.classList.add('on');done.setAttribute('tabindex','-1');done.focus();
+   var st=document.querySelector('.sticky');if(st)st.classList.remove('show');
+  })
+  .catch(function(){btn.disabled=false;btn.textContent=base;document.getElementById('sendfail').classList.add('on');});
+ });
+})();
+</script>
+</body>
+</html>
